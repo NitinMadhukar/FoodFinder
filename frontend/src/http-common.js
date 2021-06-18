@@ -1,7 +1,8 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "http://localhost:5000/api/v1/restaurants",
+  //linked with mongoDB realm
+  baseURL: "https://ap-south-1.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/restaurant-reviews-nkxzc/service/restaurants/incoming_webhook/",
   headers: {
     "Content-type": "application/json"
   }
